@@ -1,0 +1,179 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+/*header*/
+.container .content_header .logo_header a img {
+    height: auto;
+    width: 97px;
+  }
+  .container{
+    width: 1140px;
+    margin: 0 auto;
+  }
+  header{
+    background: rgb(32, 32, 32);
+    height: 98px;
+    width: auto;
+  }
+  header .container .content_header{
+    display: flex;
+    align-items: flex-start;
+  }
+  /*dropdown*/
+  .dropdown{
+    position: relative;
+          display: inline-block;
+  }
+  .menu_main_btn{
+    border: none;
+      cursor: pointer;
+      background-color: white;
+      margin-top: 1px;
+      padding-right: 9px;
+      background: rgb(32, 32, 32);
+  }
+  .dropdown_main_items{
+    display: none;
+    background-color: rgb(39, 39, 38);
+      width: 354px;
+      height: 38px;
+      border-radius: 10px;
+      margin-top: -43px;
+      margin-left: 95px;
+      box-shadow: 0 2px 8px rgb(0 0 0 / 36%);
+      box-sizing: border-box;
+      padding: 8px 7px 3px;
+      z-index: 3;
+      position: fixed;
+      transition: 3s ease-out;
+      padding-top: 10px;
+  }
+  .dropdown_main_item{
+    display: flex;
+      align-items: flex-start;;
+  }
+  .dropdown:hover .dropdown_main_items{
+    display: block;
+  }
+  .dropdown_main_items .dropdown_main_item a{
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  .dropdown_main_item a{
+      color: white;
+  }
+  .dropdown_main_item a:hover{
+      color: #FBBC01;
+}
+  /*end dropdown*/
+  header .container .content_header .menu_header nav .nav_link li{
+      display: inline-block;
+      list-style: none;
+      margin: 0 20px;
+  }
+  header .container .content_header .menu_header nav .nav_link li a{
+  text-decoration: none;
+  color: #FBBC01;
+  font-weight: 400px;
+  font-family: cursive;
+  
+  }
+  header .container .content_header .menu_header{
+    flex-basis: 80%;
+    font-size: 69px;
+    margin-left: 385px;
+  }
+  .main_buy{
+      width: 1000px;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 60px;
+  }
+  .main_buy_box{
+  display: flex;
+  }
+  .buy_img{
+    margin-left: 32px;
+    margin-top: 40px;
+  }
+  .main_buy_items{
+      margin-left: 139px;
+      margin-top: -3px;
+  }
+  .star{
+    margin-bottom: 5px;
+    margin-top: 8px;
+    font-size: 20px;
+  }
+  .money{
+    margin-top: 8px;
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: -4px;
+    background: rgb(145, 145, 143);
+    color: red;
+    height: 33px;
+}
+.size{
+    display: flex;
+    margin-top: 10px;
+}
+.size a{
+    height: 23px;
+    width: 39px;
+    border: 2px solid #6c757d;
+    border-radius: 6px;
+    margin-top: -3px;
+    text-align: center;
+    color: #6c757d;
+    background: white;
+}
+.size a:hover{
+    background: #6c757d;
+    color: white;
+}
+.amount{
+    display: flex;
+    align-items: center;
+}
+.ship a{
+    height: 23px;
+    width: 39px;
+    border: 2px solid #6c757d;
+    border-radius: 6px;
+    margin-top: -3px;
+    text-align: center;
+    color: #6c757d;
+    background: white;
+}
+.ship a:hover{
+    background: #6c757d;
+    color: white;
+}
+.pay a{
+    height: 23px;
+    width: 39px;
+    border: 2px solid #6c757d;
+    border-radius: 6px;
+    margin-top: -3px;
+    text-align: center;
+    color: #6c757d;
+    background: white;
+}
+.pay a:hover{
+    background: #6c757d;
+    color: white;
+}
+.put button{
+    height: 34px;
+    background-color: red;
+    color: white;
+    width: 81px;
+}
+
+.put button:hover{
+    color: black;
+}
