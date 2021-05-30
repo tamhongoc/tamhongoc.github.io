@@ -13,17 +13,55 @@
   margin: 0 auto;
 }
 header{
-  background: black;
+  background: rgb(32, 32, 32);
   height: 98px;
   width: auto;
 }
 header .container .content_header{
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
-header .container .content_header .logo_header{
-    flex-basis: 10%;
+/*dropdown*/
+.dropdown{
+  position: relative;
+        display: inline-block;
 }
+.menu_main_btn{
+  border: none;
+    cursor: pointer;
+    background-color: white;
+    margin-top: 1px;
+    padding-right: 9px;
+    background: rgb(32, 32, 32);
+}
+.dropdown_main_items{
+  display: none;
+  background-color: rgb(39, 39, 38);
+    width: 305px;
+    height: 38px;
+    border-radius: 10px;
+    margin-top: -43px;
+    margin-left: 95px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 36%);
+    box-sizing: border-box;
+    padding: 8px 7px 3px;
+    z-index: 3;
+    position: fixed;
+    transition: 3s ease-out;
+    padding-top: 10px;
+}
+.dropdown_main_item{
+  display: flex;
+    align-items: flex-start;;
+}
+.dropdown:hover .dropdown_main_items{
+  display: block;
+}
+.dropdown_main_items .dropdown_main_item a{
+  text-decoration: none;
+  margin-left: 10px;
+}
+/*end dropdown*/
 header .container .content_header .menu_header nav .nav_link li{
     display: inline-block;
     list-style: none;
@@ -44,7 +82,7 @@ header .container .content_header .menu_header{
 /*search*/
 .main_nav__search{
   display: flex;
-
+  margin-top: 45px;
 }
 .input_search{
  height: 100%;
@@ -66,7 +104,7 @@ a{
 .body_product .container .title{
   width: 100%;
   text-align: center;
-  background: black;
+  background: rgb(32, 32, 32);
   padding: 15px 0;
 
 }
@@ -207,12 +245,3 @@ a:hover{
   width: 178px;
 }
 /*end footer*/
-
-
-
-
-
-
-  
-
-
