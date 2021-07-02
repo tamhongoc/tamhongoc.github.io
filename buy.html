@@ -5,52 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="buy.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  
     <title>Oder</title>
+    <script>
+        function Buy(){
+            alert("Bạn đã đặt hàng thành công");
+        }
+    </script>
 </head>
 <body>
     <!--heeder-->
-    <header>
-        <div class="container">
-             <div class="content_header">
-                  <div class="dropdown">
-                   <button class="menu_main_btn">
-                     <img src="img/WOod.png" style="width:94px;height: auto; ">
-                   </button>
-                   <div class="dropdown_main_items">
-                      <div class="dropdown_main_item">
-                           <a href="./index.html">Home</a>
-                           <a href="./food.html">Food</a>
-                           <a href="./anvat.html">Cakes</a>
-                           <a href="./water.html">Drink</a>
-                           <a href="./contact.html">Evaluate</a>
-                           <a href="./sign.html">Sign in</a>
-                      </div>
-                   </div>
+    <div class="girl wide">
+        <div class="contaner">
+          <div class="logotrai">
+             <div class="dropdown">
+               <button class="nut"><a href="index.html">WOOD</a></button>
+              <div class="dropdown_items">
+                <div class="dropdown_item">
+                  <div class="food">
+                    Ẩm thực    <hr><br>
+                    
+                         <div class="list"><a href="food.html">Đồ ăn</a>
+                    <a href="water.html">Nước</a>
+                    <a href="anvat.html">Ăn vặt</a></div> 
                   </div>
-             <div class="menu_header">
-                  <nav>
-                       <ul class="nav_link">
-                            <li><a href="">Oder</a></li>
-                       </ul>
-                  </nav>
-             </div>
-
-             </div>
-             
+                </div>
+              </div>
+            </div>
+            <div class="search"><a href=""><i class="fa fa-search"></i></a><input type="text" placeholder="Tìm kiếm món ăn,nhà hàng"></div>
+          </div>
+          <div class="logophai">
+             <ul>
+               <li>
+                   <div class="giohang">Đơn hàng</div>
+                   <div class="listgiohang">
+                     Shipper đang giao hàng cho bạn 
+                     <img src="https://images.foody.vn/res/g67/667629/prof/s640x400/foody-mobile-m-e-jpg-772-636334641398849023.jpg" alt="">
+                     <hr>
+                     Đơn hàng của bạn đang được chuẩn bị 
+                     <img src="https://images.foody.vn/res/g15/144507/prof/s640x400/foody-upload-api-foody-mobile-seatalk_img_15868599-200414173004.jpg" alt="">
+                     <hr>
+                     Đơn hàng của bạn đang được giao
+                     <img src="https://images.foody.vn/res/g99/989671/prof/s640x400/foody-upload-api-foody-mobile-seatalk_img_15888236-200507105720.jpg" alt="">
+                 </div>
+         </li> 
+                 <li><a href="trogiup.html">Trợ giúp</a></li>
+                 
+                 <div class="me"><a href=""><i class="fa fa-user-circle"></i></a></div>
+               </ul>
+         </div>
         </div>
-   </header>
    <!--end heeder-->
     <div class="main_buy">
         <div class="main_buy_box">
             <div class="buy_img">
-                <img src="https://images.foody.vn/res/g28/277130/prof/s640x400/foody-upload-api-foody-mobile-5-201006112619.jpg" style="width: 366px; height: auto;border: 4px solid black;">
+                <img src="https://images.foody.vn/res/g28/277130/prof/s640x400/foody-upload-api-foody-mobile-5-201006112619.jpg" style="width: 100%; height: auto;border: 4px solid orangered;">
             </div> 
             <div class="main_buy_items">
             <div class="mai_buy_item">
             <ul>
-                <div style="font-size: 23px;font-weight: 550;">Bún chả</div>
+                <div style="font-size: 23px;font-weight: 550;">Cơm gà</div>
                 <hr style="margin-top: 1rem;margin-bottom: 1rem;">
                 <div class="star">
 					<i class="fa fa-star" id="1" style="color: yellow;"></i>					
@@ -65,64 +81,111 @@
                 <hr style="margin-top: 1rem;margin-bottom: 1rem;">
                 <div class="size">
                     <li style="list-style-type: none;">Kích cỡ:</li>
-                    <a href="" style="text-decoration: none; margin-left: 5px;">Nhỏ</a>
-                    <a href="" style="text-decoration: none; margin-left: 5px;">Vừa</a>
-                    <a href="" style="text-decoration: none; margin-left: 5px;">Lớn</a>
+                    <div class="container">
+	
+                        
+                      <ul>
+                      <li>
+                        <input type="radio" id="f-option" name="selector">
+                        <label for="f-option">Lớn</label>
+                        
+                        <div class="check"></div>
+                      </li>
+                      
+                      <li>
+                        <input type="radio" id="s-option" name="selector">
+                        <label for="s-option">Nhỏ</label>
+                        
+                        <div class="check"><div class="inside"></div></div>
+                      </li>
+                      
+                      <li>
+                        <input type="radio" id="t-option" name="selector">
+                        <label for="t-option">Vừa</label>
+                        
+                        <div class="check"><div class="inside"></div></div>
+                      </li>
+                    </ul>
+                    </div>
                 </div>
                 <hr style="margin-top: 1rem;margin-bottom: 1rem;">
                 <div class="amount">
-                    <h2>số lượng:</h2>
-                    <input type="button" value="-" style="font-size: 21px;margin-left: 4px;margin-right: 6px;width: 17px;height: 29px;">
-                    <input type="text" style="width: 38px; height: 23px;" value="1">
-                    <input type="button" value="+" style="font-size: 21px;
-                    margin-left: 6px;
-                    width: 17px;
-                    height: 29px;">
+                    <h2 style="color: black;">Số lượng:&nbsp;</h2>
+                    <input type="text" style="width: 7%; height: 1.5rem;" value="0">
+                    
                 </div>
                 <hr style="margin-top: 1rem;margin-bottom: 1rem;">
                 <div class="ship">
                 <i class="fa fa-shopping-cart" style="font-size: 20px;"> Đơn vị giao hàng:</i>
-                <a href="" style="text-decoration: none; margin-left: 5px;">Grap</a>
-                <a href="" style="text-decoration: none; margin-left: 5px;">Now</a>
-                <a href="" style="text-decoration: none; margin-left: 5px;">Bee</a>
+                <div style="margin-top: 1rem;">
+                    <label>
+                      <input type="radio" class="option-input radio" name="example" />
+                      Grap
+                    </label>
+                    <label>
+                      <input type="radio" class="option-input radio" name="example" />
+                      Now
+                    </label>
+                    <label>
+                      <input type="radio" class="option-input radio" name="example" />
+                      Beemin
+                    </label>
+                  </div>
                 </div>
                 <hr style="margin-top: 1rem;margin-bottom: 1rem;">
                 <div class="pay">
                 <i class="fas fa-hand-holding-usd">Phương thức thanh toán:</i>
-                <a href="" style="text-decoration: none; margin-left: 5px;">Tiền mặt</a>
-                <a href="" style="text-decoration: none; margin-left: 5px;">Thẻ</a>
+                <div style="margin-top: 1rem;">
+                    <label>
+                      <input type="checkbox" class="option-input checkbox" CHECKED />
+                      Tiền mặt
+                    </label>
+                    <label>
+                      <input type="checkbox" class="option-input checkbox" />
+                      Thẻ
+                    </label>
+                  </div>
                 </div>
                 <hr style="margin-top: 1rem;margin-bottom: 1rem;">
-                <Div class="put"><button>Đặt hàng</button></Div>
+                <Div class="put">
+                    <input type="button" onclick="Buy();" name="ok" value="Đặt hàng">
+                </Div>
+                
             </ul>
             </div>
             </div>
         </div>
     </div>
     <!--footer-->
-<footer>
-    <div class="container_footer">
-    <div class="container_footer_header"><div class="footer_header">
-    <div class="phone"> <a href=""><i class="fa fa-phone-square"></a></i>&nbsp&nbsp0818337335</div>
-    <div class="email"><a href=""><i class="fa fa-envelope"></a></i>&nbsp&nbsphntam20it9@vku.udn.vn</div>
-    <div class="footer_icon"><a href="" ><i class="fa fa-facebook-square"></a></i>&nbsp&nbsp<a href=""><i class="fa fa-twitter-square"></i></a></div>
-    </div></div>
-     <div class="container_footer_main">
-     <div class="footer_main"><h1>address</h1>
-          <div class="address">746 Trần Cao Vân,Quận Thanh Khê,TP.Đà Nẵng</div>
-     </div>
-     <div class="footer_main"><h1>Our Company</h1>
-          <div>Delivery <br>Legal Notice <br>About us <br>Secure payment
-<br>Contact us
-</div>
-     </div>
-         <div class="footer_main">
-              <h1>Products</h1>
-              <div>Prices drop <br>New products <br> Best sales<br>Contact us<br>Quality</div>
-         </div>
-    </div>
-    </div>
-</footer>
+    <div class="footer">
+        <div class="dongtren">
+          <div style="width: 33.3%;"><i class="fa fa-phone-square"></i>&nbsp;0818 337 335</div>
+          <div style="width: 33.3%;"><i class="fa fa-envelope"></i>&nbsp;hntam@vku.udn.vn</div>
+          <div style="width: 33.3%;"><i class="fa fa-facebook-square">&nbsp;&nbsp;<i class="fa fa-twitter-square"></i></i></div>
+        </div>
+        <div class="dongduoi">
+          <div style="width: 33.3%;">
+            <h2>Address</h2>
+            <p>746 Trần Cao Vân,Quận <br> Thanh Khê,TP.Đà Nẵng</p>
+          </div>
+          <div style="width: 33.3%;">
+            <h2>Our Company</h2>
+            <p>Delivery <br>Legal Notice <br>About us <br>Secure payment <br>Contact us</p>
+          </div>
+          <div style="width: 33.3%;">
+            <h2>Products</h2>
+            <p>Prices drop <br>New products <br>Best sales <br>Quality</p>
+          </div>
+        </div>  
+      </div>
+   </div>
 <!--end footer-->
+<script>
+    $(document).ready(function(){
+        $('.giohang').click(function(){
+          $(this).parent().children('.listgiohang').slideToggle();
+        });
+    });
+</script>
 </body>
 </html>
