@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="trogiup.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="girl wide">
+        <div class="contaner">
+          <div class="logotrai">
+             <div class="dropdown">
+               <button class="nut"><a href="index.html">WOOD</a></button>
+              <div class="dropdown_items">
+                <div class="dropdown_item">
+                  <div class="food">
+                    Ẩm thực<hr>
+                    
+					<div class="list"><a href="food.html">Đồ ăn</a>
+                    <a href="water.html">Nước</a>
+                    <a href="anvat.html">Ăn vặt</a></div> 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="search"><a href=""><i class="fa fa-search"></i></a><input type="text" placeholder="Tìm kiếm món ăn,nhà hàng"></div>
+          </div>
+          <div class="logophai">
+              <ul>
+                <li>
+                    <div class="giohang">Đơn hàng</div>
+                    <div class="listgiohang">
+                      Shipper đang giao hàng cho bạn 
+                      <img src="https://images.foody.vn/res/g67/667629/prof/s640x400/foody-mobile-m-e-jpg-772-636334641398849023.jpg" alt="">
+                      <hr>
+                      Đơn hàng của bạn đang được chuẩn bị 
+                      <img src="https://images.foody.vn/res/g15/144507/prof/s640x400/foody-upload-api-foody-mobile-seatalk_img_15868599-200414173004.jpg" alt="">
+                      <hr>
+                      Đơn hàng của bạn đang được giao
+                      <img src="https://images.foody.vn/res/g99/989671/prof/s640x400/foody-upload-api-foody-mobile-seatalk_img_15888236-200507105720.jpg" alt="">
+                  </div>
+          </li> 
+                  <li><a href="trogiup.html">Trợ giúp</a></li>
+                  
+                  <div class="me"><a href=""><i class="fa fa-user-circle"></i></a></div>
+                </ul>
+          </div>
+        </div>
+
+        <div class="trogiup">
+            <div>
+                <h2>Xin chào,chúng tôi có thể giúp gì cho bạn?</h2>
+            </div>
+            <div style="width: 100%;text-align: center;margin-top: 1%;">
+                <input type="text" placeholder="Nhập từ khóa tìm kiếm" style="width: 33%;padding: 0.5%;border: none;outline: none;">
+                <button class="submit"><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+        <div class="chude">
+            <h2>Chủ đề hay hỏi</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h5>Làm sao để mua hàng</h3>
+                        <i class="arrow fa fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-body">
+                        bấm vào nút buy để mua hàng
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h5>Làm sao để biết được địa chỉ của quán</h3>
+                        <i class="arrow fa fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-body">
+                        Bạn đưa chuột vào hình của món bạn cần mua và click vào location trang web sẽ hiện ra địa chỉ cho bạn thông qua gg map
+                    </div>
+                </div><div class="accordion-item">
+                    <div class="accordion-header">
+                        <h5>Làm sao để mua hàng</h3>
+                        <i class="arrow fa fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-body">
+                        bấm vào nút buy để mua hàng
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="danhgia">
+            <h5 style="padding-top: 1rem;">Bạn có hài lòng với những câu trả lời?</h5>
+            <div class="danhgia_item">
+                <button onclick="yes()"><i class="fa fa-thumbs-up"></i>Có</button>
+                <button onclick="no()"><i class="fa fa-thumbs-down"></i>Không</button>
+            </div>
+        </div>
+        <!--footer-->
+        <div class="footer">
+            <div class="dongtren">
+              <div style="width: 33.3%;"><i class="fa fa-phone-square"></i>&nbsp;0818 337 335</div>
+              <div style="width: 33.3%;"><i class="fa fa-envelope"></i>&nbsp;hntam@vku.udn.vn</div>
+              <div style="width: 33.3%;"><i class="fa fa-facebook-square">&nbsp;&nbsp;<i class="fa fa-twitter-square"></i></i></div>
+            </div>
+            <div class="dongduoi">
+              <div style="width: 33.3%;">
+                <h2>Address</h2>
+                <p>746 Trần Cao Vân,Quận <br> Thanh Khê,TP.Đà Nẵng</p>
+              </div>
+              <div style="width: 33.3%;">
+                <h2>Our Company</h2>
+                <p>Delivery <br>Legal Notice <br>About us <br>Secure payment <br>Contact us</p>
+              </div>
+              <div style="width: 33.3%;">
+                <h2>Products</h2>
+                <p>Prices drop <br>New products <br>Best sales <br>Quality</p>
+              </div>
+            </div>  
+          </div>
+      </div>
+      <script>
+          $(document).ready(function(){
+              $('.accordion-item.active .accordion-body').slideDown
+            $('.accordion-header').click(function() {
+                $(this).parent().toggleClass('active');
+                $(this).parent().children('.accordion-body').slideToggle();
+            })
+          });
+      </script>
+      <script>
+          $(document).ready(function(){
+              $('.giohang').click(function(){
+                $(this).parent().children('.listgiohang').slideToggle();
+              });
+          });
+      </script>
+      <script>
+          function yes(){
+              alert('Cảm ơn bạn đã đánh giá')
+          }
+          function no(){
+              alert('Chúng tôi sẽ cố gắng khắc phục')
+          }
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
