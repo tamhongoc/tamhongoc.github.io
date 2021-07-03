@@ -11,6 +11,7 @@
   .wide{
     max-width: 1366px;
     margin: 0 auto;
+    background: floralwhite;
   }  
   .contaner{
     display: flex;
@@ -18,7 +19,7 @@
     height: 4rem;
     justify-content: space-between;
     align-items: center;
-    background:white ;  
+    background:rgb(252, 214, 2) ;  
   }
   .logotrai{
     display: flex;
